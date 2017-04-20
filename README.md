@@ -1,6 +1,11 @@
 # Frequency Analysis of Words
 
-[TODO. There will be project description]
+Поиск самых частых слов в файле
+
+Запуск скрипта:
+"""python
+python lang_frequency /path/to/txt_file
+"""
 
 # Project Goals
 
