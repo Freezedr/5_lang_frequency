@@ -3,9 +3,9 @@
 Поиск самых частых слов в файле
 
 Запуск скрипта:
-"""python
+```bash
 python lang_frequency /path/to/txt_file
-"""
+```
 
 # Project Goals
 
