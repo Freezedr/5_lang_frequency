@@ -3,6 +3,7 @@ import re
 import sys
 
 word_amount = 10
+filepath_arg_position = 1
 
 def load_data(filepath):
     with open(filepath) as f:
@@ -13,7 +14,7 @@ def get_most_frequent_words(text):
     return c.most_common(word_amount)
 
 if __name__ == '__main__':
-    filepath = sys.argv[1]
+    filepath = sys.argv[filepath_arg_position]
     if filepath:
         text = load_data(filepath)
         print(get_most_frequent_words(text))
