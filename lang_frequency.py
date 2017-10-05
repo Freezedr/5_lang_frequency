@@ -13,13 +13,13 @@ def load_data(filepath):
 
 def get_most_frequent_words(text):
     c = Counter(re.split("\W+", text))
-    WORD_AMOUNT = 10
-    return c.most_common(WORD_AMOUNT)
+    word_amount = 10
+    return c.most_common(word_amount)
 
 
 if __name__ == '__main__':
-    FILEPATH_ARG_POSITION = 1
-    filepath = sys.argv[FILEPATH_ARG_POSITION]
+    filepath_arg_position = 1
+    filepath = sys.argv[filepath_arg_position]
     if filepath:
         text = load_data(filepath)
         if text:
